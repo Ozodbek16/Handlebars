@@ -1,0 +1,17 @@
+<div class="allbooks">
+    <h1>{{title}} // books.hbs</h1>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Year</th>
+        </tr>
+        {{#each books}}
+        <tr>
+            <td>{{id}}</td>
+            <td>{{name}}</td>
+            <td>{{year}}</td>
+        </tr>
+        {{/each}}
+    </table>
+</div>

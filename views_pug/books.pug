@@ -1,0 +1,14 @@
+extends layouts/main
+block content
+    .allBooks
+        h1= title
+        table 
+            tr 
+                th Id
+                th Name
+                th Year 
+            each book in books 
+                tr 
+                td= book.id 
+                td= book.name
+                td= book.year

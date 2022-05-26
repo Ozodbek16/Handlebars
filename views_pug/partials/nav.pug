@@ -1,0 +1,23 @@
+nav
+  .nav-wrapper
+    a.brand-logo(href='/') BookStore
+    ul#nav-mobile.right.hide-on-med-and-down
+      if isHome 
+        li.active
+          a(href='/') Home
+      else  
+        li
+          a(href='/') Home
+      if isBooks 
+        li.active
+          a(href='/api/books') Books
+      else  
+        li
+          a(href='/api/books') Books
+      if isAbout
+        li.active
+          a(href='/about') About us
+      else  
+        li
+          a(href='/about') About us
+
